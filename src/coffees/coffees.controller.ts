@@ -17,12 +17,12 @@ import { REQUEST } from '@nestjs/core';
 import { CoffeesService } from './coffees.service';
 
 import { CreateCoffeeDto, UpdateCoffeeDto } from './dto';
-import { PaginationQueryDto } from 'src/common/dto';
+import { PaginationQueryDto } from '../common/dto';
 import { Request } from 'express';
-import { Public } from 'src/common/decorators/public.decorator';
+import { Public } from '../common/decorators/public.decorator';
 
-import { ParseIntPipe } from 'src/common/pipes/parse-int.pipe';
-import { Protocol } from 'src/common/decorators/protocol.decorator';
+import { ParseIntPipe } from '../common/pipes/parse-int.pipe';
+import { Protocol } from '../common/decorators/protocol.decorator';
 import { ApiForbiddenResponse, ApiTags } from '@nestjs/swagger';
 
 @ApiTags('coffees')
